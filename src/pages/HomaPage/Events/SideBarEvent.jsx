@@ -1,28 +1,28 @@
 import React from "react";
 import data from "../../../data";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import like_icon from "../../../assets/like-svgrepo-com.svg";
-import message_icon from "../../../assets/message-svgrepo-com.svg";
-import view_icon from "../../../assets/view-svgrepo-com.svg";
-import facebook_icon from "../../../assets/facebook-social-media-svgrepo-com.svg";
-import snapchat_icon from "../../../assets/snapchat-social-media-svgrepo-com.svg";
-import twitter_icon from "../../../assets/twitter-social-media-svgrepo-com.svg";
-import instagram_icon from "../../../assets/icons8-instagram.svg";
-import google_play_icon from "../../../assets/google-play-badge-logo-svgrepo-com.svg";
-import app_store_icon from "../../../assets/download-on-the-app-store-apple-logo-svgrepo-com.svg";
+import like_icon from "../../../assets/like1.svg";
+import message_icon from "../../../assets/massage1.svg";
+import view_icon from "../../../assets/view1.svg";
+import facebook_icon from "../../../assets/face1.svg";
+import snapchat_icon from "../../../assets/snap.svg";
+import twitter_icon from "../../../assets/twiter.svg";
+import instagram_icon from "../../../assets/insta1.svg";
+import google_play_icon from "../../../assets/googleplay2.svg";
+import app_store_icon from "../../../assets/appstore2.svg";
 
 const SideBarEvent = () => {
   return (
-    <div>
+    <div id="SideBarEvent">
       {" "}
-      <h2>الاخبار</h2>
+      <p className="fw-bold text-right">اخر الاخبار</p>
       {data.Events.map((item, index) => {
         return (
           <div className="col-xs-12s col-sm-12 col-md-12 col-lg-12" key={index}>
             <Link to={`/Card_data/` + item.id}>
               <div className="">
                 <div className="card mb-3">
-                  <div className="row g-0 row_rev">
+                  <div className="row g-0 ">
                     <div className="col-md-12 img_pos">
                       <img
                         src={item.imagSrc}
@@ -39,8 +39,8 @@ const SideBarEvent = () => {
                       </div>
                       <hr />
                       <div className="Links">
-                        <div className="location">
-                          4322
+                        <div className="icons_sidebar">
+                          <p> 4322</p>
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -48,8 +48,8 @@ const SideBarEvent = () => {
                             <img className="card_icon" src={like_icon} />
                           </span>
                         </div>
-                        <div className="timeZone">
-                          21
+                        <div className="icons_sidebar">
+                          <p> 21</p>{" "}
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -57,8 +57,8 @@ const SideBarEvent = () => {
                             <img className="card_icon" src={message_icon} />
                           </span>
                         </div>
-                        <div className="viewicone">
-                          234
+                        <div className="icons_sidebar">
+                          <p> 234</p>{" "}
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -75,7 +75,7 @@ const SideBarEvent = () => {
           </div>
         );
       })}
-      <h2>ابق علي اطلاق</h2>
+      <h5 className="fw-bold text-right">ابق علي اطلاق</h5>
       <div id="social_media">
         <a href="#">
           <img src={facebook_icon} />
@@ -90,7 +90,7 @@ const SideBarEvent = () => {
           <img src={instagram_icon} />
         </a>
       </div>
-      <h2>حمل التطبيق</h2>{" "}
+      <h5 className="fw-bold text-right">حمل التطبيق</h5>{" "}
       <p className="text-right">
         تطبيق شامل يقدم لك آخر الأحداث في السعودية عبر تغطية مستمرة
       </p>{" "}

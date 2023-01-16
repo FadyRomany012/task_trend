@@ -16,19 +16,36 @@
   align-items: center;
   justify-content: center;
 }
-
+.Footer-logo {
+  color: #059e4b;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .fa-react {
   margin-left: 0.5rem;
   font-size: 1.6rem;
 }
-
+.nav-menu ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 20px;
+  list-style: none;
+  text-align: center;
+  width: 41vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 20px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 41vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -36,13 +53,30 @@
 .nav-links {
   color: #787f91;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  text-decoration: none;
+  position: relative;
 }
-
+.nav-links:after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #059e4c;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+.nav-links:hover:after {
+  width: 100%;
+  opacity: 0.9;
+}
 .nav-links:hover {
   color: #059e4b;
+  font-weight: 700;
   border-radius: 4px;
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out;
 }
 .color_gray {
   color: #787f91;
@@ -106,6 +140,7 @@
     transition: all 0.5s ease;
     z-index: 1;
     width: 90%;
+    flex-direction: column-reverse;
   }
 
   .nav-links {
@@ -116,7 +151,6 @@
   }
 
   .nav-links:hover {
-    background-color: #7577fa;
     border-radius: 0;
   }
 
@@ -170,7 +204,6 @@
 
 .btn {
   padding: 8px 20px;
-  border-radius: 4px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -189,11 +222,10 @@
 }
 
 .btn-outline {
-  background-color: transparent !important;
+  background-color: #fafcfc !important;
   color: gray;
-  border: 1px solid;
+  border-radius: 8px;
 }
-
 .btn-medium {
   font-size: 18px;
   color: #fff;
@@ -203,4 +235,32 @@
   padding: 12px 20px;
   font-size: 20px;
   color: #fff;
+}
+.title_logo h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.title_logo {
+  margin: 0 5px 0 0;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin: -3px 10px;
+}
+#basic-nav-dropdown:hover {
+  color: #059e4b;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all 0.5s ease-out;
+}
+.dropdown-menu.show {
+  display: block;
+  text-align: right;
+}
+.nav-item.dropdown {
+  direction: rtl;
+}
+a#basic-nav-dropdown {
+  color: #787f91;
+  text-decoration: none;
 }

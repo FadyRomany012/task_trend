@@ -74,7 +74,7 @@ const Card_data = () => {
                             <div className="col-3">
                               <div className="date_event_card">
                                 <p>ديسمبر</p>
-                                <h5>22</h5>
+                                <h4 className="fw-bold">22</h4>
                               </div>
                             </div>
                           </div>
@@ -84,7 +84,7 @@ const Card_data = () => {
                       </div>{" "}
                       <div className="Links card_details_zone">
                         <div className="location">
-                          {selectedEvent.address}
+                          <p> {selectedEvent.address}</p>
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -93,7 +93,7 @@ const Card_data = () => {
                           </span>
                         </div>
                         <div className="timeZone">
-                          12:00ص
+                          <p> 12:00ص</p>{" "}
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"

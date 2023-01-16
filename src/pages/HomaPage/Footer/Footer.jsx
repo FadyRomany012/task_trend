@@ -1,16 +1,16 @@
 import React from "react";
 import "./Footer.scss";
 import logo from "../../../assets/logo.png";
-import facebook_icon from "../../../assets/facebook-social-media-svgrepo-com.svg";
-import snapchat_icon from "../../../assets/snapchat-social-media-svgrepo-com.svg";
-import twitter_icon from "../../../assets/twitter-social-media-svgrepo-com.svg";
-import instagram_icon from "../../../assets/icons8-instagram.svg";
+import facebook_icon from "../../../assets/face3.svg";
+import snapchat_icon from "../../../assets/snap3.svg";
+import twitter_icon from "../../../assets/twiter3.svg";
+import instagram_icon from "../../../assets/insta3.svg";
 
 const Footer = () => {
   return (
     <div>
       {" "}
-      <section id="TitleSecOne" className="container form_Section">
+      <section id="TitleSecOne" className="container form_Section ">
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-6">
@@ -19,9 +19,9 @@ const Footer = () => {
                   type="email"
                   maxLength="50"
                   required
-                  placeholder="Enter your email address"
+                  placeholder="البريد الالكترونى"
                 />
-                <button className="bt">Subscribe</button>
+                <button className="bt">اشتراك</button>
               </form>{" "}
             </div>
             <div className="col-md-6">
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </section>
       <footer>
-        <div className="container">
+        <div className="container Footer_sec">
           <div className="row">
             <div className="col-md-4 footer-column">
               <div id="social_media">
@@ -73,12 +73,54 @@ const Footer = () => {
               </span>
             </div>
             <div className="col-md-4 footer-column">
-              <h1 className="navbar-logo">
-                <span>
+              <h1 className="Footer-logo">
+                <span className="title_logo">
                   <h5>الشعار</h5>
                   <h6>السولقن</h6>
                 </span>
-                <img className="fab fa-react" src={logo} />
+                <span className="logo_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="76"
+                    height="76"
+                    viewBox="0 0 76 76"
+                  >
+                    <g
+                      id="Group_16439"
+                      data-name="Group 16439"
+                      transform="translate(-1664 -48)"
+                    >
+                      <g
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        transform="translate(1664 48)"
+                        fill="#fff"
+                        stroke="#059e4b"
+                        strokeWidth="1"
+                      >
+                        <circle cx="38" cy="38" r="38" stroke="none" />
+                        <circle cx="38" cy="38" r="37.5" fill="none" />
+                      </g>
+                      <g
+                        id="Rectangle_2463"
+                        data-name="Rectangle 2463"
+                        transform="translate(1701.646 50.498) rotate(45)"
+                        fill="#fff"
+                        stroke="#049d4a"
+                        strokeWidth="1"
+                      >
+                        <rect width="50" height="49" stroke="none" />
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="49"
+                          height="48"
+                          fill="none"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </span>{" "}
               </h1>
             </div>
           </div>

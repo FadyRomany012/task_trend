@@ -1,5 +1,7 @@
 import React from "react";
-import image from "../../../assets/imagesec1.png";
+import insta from "../../../assets/insta4.svg";
+import face from "../../../assets/face4.svg";
+import www from "../../../assets/www1.svg";
 
 const Card_info = () => {
   return (
@@ -8,24 +10,31 @@ const Card_info = () => {
       <section id="TitleSecOne" className="container">
         <div className="card mb-3">
           <div className="row g-0">
-            <div className="col-md-8">
+            <div className="col-md-6">
               <div className="card-body TitleSecOne_prag">
                 <h5 className="card-title">العنوان </h5>
                 <p className="card-text">
                   الشيخ محمد بن إبراهيم،، الدرعية الجديدة، الدرعية 13734
                 </p>
-                <p className="card-text">https://saudi-eventshow.com/</p>
+                <div className="wwwibe">
+                  {" "}
+                  <p className="card-text">https://saudi-eventshow.com/</p>
+                  <img src={www} />
+                </div>
                 <div className="socialmedia_info ">
-                  <h6>
-                    حساب الفيس بوك<i className="fab fa-facebook-f"></i>
-                  </h6>{" "}
-                  <h6>
-                    حساب الانستا<i className="fab fa-instagram"></i>
-                  </h6>
+                  <span>
+                    {" "}
+                    <p> حساب الفيس بوك</p> <img src={face} />
+                  </span>
+                  <span>
+                    {" "}
+                    <p> حساب الانستا</p>
+                    <img src={insta} />{" "}
+                  </span>
                 </div>
               </div>
             </div>{" "}
-            <div className="col-md-4">
+            <div className="col-md-6">
               <div className="mapouter">
                 <div className="gmap_canvas">
                   <iframe
