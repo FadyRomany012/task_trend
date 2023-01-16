@@ -59,7 +59,7 @@ const Events = () => {
                                   </span>
                                 </div>
                                 <div className="timeZone">
-                                  <p> 12:00ص</p>{" "}
+                                  <p> 12:00ص</p>
                                   <span
                                     className="glyphicon glyphicon-star"
                                     aria-hidden="true"

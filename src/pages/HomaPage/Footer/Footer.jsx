@@ -9,7 +9,6 @@ import instagram_icon from "../../../assets/insta3.svg";
 const Footer = () => {
   return (
     <div>
-      {" "}
       <section id="TitleSecOne" className="container form_Section ">
         <div className="card mb-3">
           <div className="row g-0">
@@ -22,7 +21,7 @@ const Footer = () => {
                   placeholder="البريد الالكترونى"
                 />
                 <button className="bt">اشتراك</button>
-              </form>{" "}
+              </form>
             </div>
             <div className="col-md-6">
               <div className="card-body TitleSecOne_prag">
@@ -67,7 +66,7 @@ const Footer = () => {
                 <li className="list-inline-item">
                   <a href="#"> تواصل معنا</a>
                 </li>
-              </ul>{" "}
+              </ul>
               <span className="copyright quick-links">
                 © 2022, جميع الحقوق محفوظة.
               </span>
@@ -120,12 +119,12 @@ const Footer = () => {
                       </g>
                     </g>
                   </svg>
-                </span>{" "}
+                </span>
               </h1>
             </div>
           </div>
         </div>
-      </footer>{" "}
+      </footer>
     </div>
   );
 };

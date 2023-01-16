@@ -55,7 +55,6 @@ const Card_data = () => {
                 <div className="">
                   <div className="card mb-3">
                     <div className="row g-0 ">
-                      {" "}
                       <div className="col-md-6 img_pos">
                         <img
                           src={selectedEvent.imagSrc}
@@ -81,7 +80,7 @@ const Card_data = () => {
                           <p className="card-text">{selectedEvent.desc}</p>
                         </div>
                         <hr />
-                      </div>{" "}
+                      </div>
                       <div className="Links card_details_zone">
                         <div className="location">
                           <p> {selectedEvent.address}</p>
@@ -93,7 +92,7 @@ const Card_data = () => {
                           </span>
                         </div>
                         <div className="timeZone">
-                          <p> 12:00ص</p>{" "}
+                          <p> 12:00ص</p>
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"

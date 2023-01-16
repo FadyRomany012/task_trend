@@ -25,6 +25,10 @@
 }
 #TitleSecOne .TitleSecOne_prag {
   text-align: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 section#TitleSecOne .card {
   margin: 20px 0 0 0;

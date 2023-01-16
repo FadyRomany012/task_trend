@@ -14,7 +14,6 @@ import app_store_icon from "../../../assets/appstore2.svg";
 const SideBarEvent = () => {
   return (
     <div id="SideBarEvent">
-      {" "}
       <p className="fw-bold text-right">اخر الاخبار</p>
       {data.Events.map((item, index) => {
         return (
@@ -49,7 +48,7 @@ const SideBarEvent = () => {
                           </span>
                         </div>
                         <div className="icons_sidebar">
-                          <p> 21</p>{" "}
+                          <p> 21</p>
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -58,7 +57,7 @@ const SideBarEvent = () => {
                           </span>
                         </div>
                         <div className="icons_sidebar">
-                          <p> 234</p>{" "}
+                          <p> 234</p>
                           <span
                             className="glyphicon glyphicon-star"
                             aria-hidden="true"
@@ -90,10 +89,10 @@ const SideBarEvent = () => {
           <img src={instagram_icon} />
         </a>
       </div>
-      <h5 className="fw-bold text-right">حمل التطبيق</h5>{" "}
+      <h5 className="fw-bold text-right">حمل التطبيق</h5>
       <p className="text-right">
         تطبيق شامل يقدم لك آخر الأحداث في السعودية عبر تغطية مستمرة
-      </p>{" "}
+      </p>
       <div id="download_apps">
         <a href="#">
           <img src={app_store_icon} />

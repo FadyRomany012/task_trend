@@ -6,7 +6,6 @@ import www from "../../../assets/www1.svg";
 const Card_info = () => {
   return (
     <div>
-      {" "}
       <section id="TitleSecOne" className="container">
         <div className="card mb-3">
           <div className="row g-0">
@@ -17,23 +16,20 @@ const Card_info = () => {
                   الشيخ محمد بن إبراهيم،، الدرعية الجديدة، الدرعية 13734
                 </p>
                 <div className="wwwibe">
-                  {" "}
                   <p className="card-text">https://saudi-eventshow.com/</p>
                   <img src={www} />
                 </div>
                 <div className="socialmedia_info ">
                   <span>
-                    {" "}
                     <p> حساب الفيس بوك</p> <img src={face} />
                   </span>
                   <span>
-                    {" "}
                     <p> حساب الانستا</p>
-                    <img src={insta} />{" "}
+                    <img src={insta} />
                   </span>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="col-md-6">
               <div className="mapouter">
                 <div className="gmap_canvas">
@@ -51,7 +47,7 @@ const Card_info = () => {
                   <br />
                   <a href="https://www.embedgooglemap.net"></a>
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>
